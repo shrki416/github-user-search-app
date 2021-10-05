@@ -1,6 +1,6 @@
-# template-repo
+# github-user-search-app
 
-Boilerplate repo for a Full Stack node application.
+A simple app that allows you to search for users on github.
 
 ## Installation:
 
