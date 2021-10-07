@@ -1,9 +1,13 @@
+import styled from "styled-components/macro";
 import moon from "./assets/icon-moon.svg";
 import search from "./assets/icon-search.svg";
+
+import { GlobalStyle } from "./styles";
 
 function App() {
   return (
     <div className="container">
+      <GlobalStyle />
       <div>
         <h1>devfinder</h1>
         <div>
