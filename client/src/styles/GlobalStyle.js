@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components/macro";
-// import fonts from './fonts';
+import fonts from "./fonts";
 import variables from "./variables";
 
 const GlobalStyle = createGlobalStyle`
-    /* ${fonts} */
+    ${fonts}
     ${variables}
 
     html {
@@ -13,4 +13,10 @@ const GlobalStyle = createGlobalStyle`
     *, *:before, *:after {
         box-sizing: inherit;
     }
+
+    body {
+        font-family: var(--font);
+    }
 `;
+
+export default GlobalStyle;
