@@ -1,16 +1,1 @@
-/* bring in normalize.css styles */
 @import-normalize;
-
-/* @import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700"); */
-
-/* body {
-  font-family: "Space Mono", monospace;
-} */
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  pointer-events: none;
-  width: 100%;
-}
