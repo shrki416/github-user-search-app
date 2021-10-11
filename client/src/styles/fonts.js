@@ -3,18 +3,16 @@ import { css } from "styled-components/macro";
 const fonts = css`
   @font-face {
     font-family: "Space Mono";
+    font-weight: bold;
     font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/space-mono-regular.woff2") format("woff2"),
-      url("../fonts/space-mono-regular.woff") format("woff");
+    src: url("../assets/fonts/SpaceMono-Bold.ttf") format("ttf");
   }
 
   @font-face {
     font-family: "Space Mono";
+    font-weight: normal;
     font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/space-mono-700.woff2") format("woff2"),
-      url("../fonts/space-mono-700.woff") format("woff");
+    src: url("../assets/fonts/SpaceMono-Regular.ttf") format("ttf");
   }
 `;
 
