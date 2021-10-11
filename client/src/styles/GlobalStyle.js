@@ -16,6 +16,17 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: var(--font);
+        background-color: var(--zircon);
+    }
+
+    .app {
+       display: flex;
+       align-items: center;
+       height: 900px;
+       padding: 144px 0;
+       width: 1440px;
+       flex-direction: column;
+       margin: 0 auto;
     }
 `;
 
