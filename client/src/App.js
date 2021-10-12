@@ -1,10 +1,7 @@
-import styled from "styled-components/macro";
 import moon from "./assets/icon-moon.svg";
 import search from "./assets/icon-search.svg";
 
-import { GlobalStyle } from "./styles";
-import { StyledTitle } from "./styles";
-import { StyledForm } from "./styles";
+import { GlobalStyle, StyledTitle, StyledForm, StyledCard } from "./styles";
 
 import octocat from "./assets/octocat.png";
 import location from "./assets/icon-location.svg";
@@ -30,17 +27,20 @@ function App() {
         <button type="button">Search</button>
       </StyledForm>
 
-      <div>
-        <div>
-          <img src={octocat} alt="octocat" />
+      <StyledCard>
+        <div className="img">
+          <img src={octocat} alt="octocat" className="profile-img" />
         </div>
-        <div>
+        <div className="bio">
           <h1>The Octocat</h1>
           <p>Joined 25 jan 2011</p>
           <h3>@octocat</h3>
-          <p>This profile has no bio</p>
+          <p className="bio-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa
+            esse laudantium vitae non nobis optio nemo facilis. Quas, vero!
+          </p>
         </div>
-        <div>
+        <div className="stats">
           <div>
             <h4>Repos</h4>
             <span>8</span>
@@ -54,7 +54,7 @@ function App() {
             <span>9</span>
           </div>
         </div>
-        <div>
+        <div className="social">
           <div>
             <img src={location} alt="location" />
             <p>San Fransico</p>
@@ -72,7 +72,7 @@ function App() {
             <p>@github</p>
           </div>
         </div>
-      </div>
+      </StyledCard>
     </div>
   );
 }
