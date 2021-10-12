@@ -4,7 +4,7 @@ const StyledTitle = styled.div`
   align-items: center;
   display: flex;
   height: 38px;
-  min-width: 730px;
+  min-width: 770px;
 
   h1 {
     letter-spacing: 0;
