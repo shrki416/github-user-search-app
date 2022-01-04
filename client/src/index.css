@@ -209,9 +209,26 @@ body {
   font-weight: 700;
 }
 
-.social-top,
-.social-bottom {
+.social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: auto;
+  margin: 36px 0 0 16px;
+  grid-gap: 12px;
+}
+
+.social > div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.social > div > img {
+  color: #4b6a9b;
+  margin-right: 16px;
+}
+
+.social > div > p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #4b6a9b;
 }
