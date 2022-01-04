@@ -9,14 +9,14 @@ import website from "./assets/icon-website.svg";
 function App() {
   return (
     <div className="app">
-      <div className="main">
-        <div className="header">
+      <main className="main">
+        <header className="header">
           <h1>devfinder</h1>
           <div className="dark-mode">
             <p>DARK</p>
             <img src={moon} alt="dark theme button" />
           </div>
-        </div>
+        </header>
 
         <div className="search">
           <div className="search-input">
@@ -56,9 +56,27 @@ function App() {
               </div>
             </section>
 
+            <section className="social">
+              <div>
+                <img src={location} alt="location" />
+                <p>San Fransisco</p>
+              </div>
+              <div>
+                <img src={twitter} alt="twitter" />
+                <p>Not Available</p>
+              </div>
+              <div>
+                <img src={website} alt="website" />
+                <p>https://github.blog</p>
+              </div>
+              <div>
+                <img src={company} alt="company" />
+                <p>@github</p>
+              </div>
+            </section>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }
