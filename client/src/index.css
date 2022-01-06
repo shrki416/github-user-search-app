@@ -395,6 +395,16 @@ body {
     padding: 24px 0;
   }
 
+  .user-stats-header {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .user-stats-body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .social {
     grid-template-columns: 1fr;
     margin: 0;
