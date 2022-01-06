@@ -34,47 +34,50 @@ function App() {
           </section>
 
           <section className="card-body">
-            <div className="body-header">
+            <div className="user-info">
               <h1 className="card-header">The Octocat</h1>
               <p className="user-name">@octocat</p>
               <p className="joined">Joined 25 Jan 2011</p>
             </div>
-            <p className="user-bio">This profile has no bio</p>
           </section>
 
-            <section className="user-stats">
-              <div>
-                <p className="user-stats-header">Repos</p>
-                <p className="user-stats-body">8</p>
-              </div>
-              <div>
-                <p className="user-stats-header">Followers</p>
-                <p className="user-stats-body">3938</p>
-              </div>
-              <div>
-                <p className="user-stats-header">Following</p>
-                <p className="user-stats-body">9</p>
-              </div>
-            </section>
+          <section className="user-bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestias aliquam sed id aliquid labore debitis illum eveniet error libero.</p>
+          </section>
 
-            <section className="social">
-              <div>
-                <img src={location} alt="location" />
-                <p>San Fransisco</p>
-              </div>
-              <div>
-                <img src={twitter} alt="twitter" />
-                <p>Not Available</p>
-              </div>
-              <div>
-                <img src={website} alt="website" />
-                <p>https://github.blog</p>
-              </div>
-              <div>
-                <img src={company} alt="company" />
-                <p>@github</p>
-              </div>
-            </section>
+          <section className="user-stats">
+            <div>
+              <p className="user-stats-header">Repos</p>
+              <p className="user-stats-body">8</p>
+            </div>
+            <div>
+              <p className="user-stats-header">Followers</p>
+              <p className="user-stats-body">3938</p>
+            </div>
+            <div>
+              <p className="user-stats-header">Following</p>
+              <p className="user-stats-body">9</p>
+            </div>
+          </section>
+
+          <section className="social">
+            <div>
+              <img src={location} alt="location" />
+              <p>San Fransisco</p>
+            </div>
+            <div>
+              <img src={twitter} alt="twitter" />
+              <p>Not Available</p>
+            </div>
+            <div>
+              <img src={website} alt="website" />
+              <p>https://github.blog</p>
+            </div>
+            <div>
+              <img src={company} alt="company" />
+              <p>@github</p>
+            </div>
+          </section>
         </div>
       </main>
     </div>
