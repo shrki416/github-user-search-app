@@ -135,9 +135,62 @@ body {
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
   background-color: #fefefe;
   margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  grid-auto-flow: row;
 }
 
+/* card-image section */
 .card-img {
+  display: grid;
+  grid-template-columns: minmax(0, 117px);
+  grid-row: 1 / span 4;
+}
+
+.card-img img {
+  width: 117px;
+  height: 117px;
+}
+
+/* user stats section */
+
+.user-stats {
+  display: grid;
+  grid-row: 3;
+  grid-column: 2 / span 3;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* social section */
+
+.social {
+  display: grid;
+  grid-row: 4;
+  grid-column: 2 / span 3;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  align-items: center; /* not sure if I need this yet */
+  /* margin: 36px 0 0 16px; */
+}
+
+.social > div {
+  display: flex;
+  align-items: center;
+}
+
+.social > div > img {
+  color: #4b6a9b;
+  margin-right: 16px;
+}
+
+.social > div > p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #4b6a9b;
+}
+
+/* .card-img {
   width: calc(100% / 4);
   height: 100%;
 }
@@ -145,6 +198,8 @@ body {
 .card-img > img {
   width: 117px;
   height: 117px;
+  grid-column-start: 1;
+  grid-row-start: span 4;
 }
 
 .card-body {
@@ -152,9 +207,10 @@ body {
 }
 
 .body-header {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-content: space-between;
+  grid-auto-flow: column;
 }
 
 .card-header {
@@ -165,9 +221,12 @@ body {
   color: #2b3442;
   margin-top: 0;
   margin-bottom: 0;
+  grid-column: 1 / 1;
 }
 
 .joined {
+  display: grid;
+  justify-content: end;
   font-family: var(--ff);
   font-size: 15px;
   line-height: 22px;
@@ -178,6 +237,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #0079ff;
+  grid-column: 2 / 1;
 }
 
 .user-bio {
@@ -211,6 +271,7 @@ body {
 
 .social {
   display: grid;
+  grid-column: 4 / 2;
   grid-template-columns: repeat(2, 1fr);
   grid-row: auto;
   margin: 36px 0 0 16px;
@@ -231,4 +292,36 @@ body {
   font-size: 15px;
   line-height: 22px;
   color: #4b6a9b;
-}
+} */
+
+/* @media screen and (max-width: 768px) {
+  .app {
+    width: 573px;
+    height: 648px;
+  }
+
+  .card {
+    width: 573px;
+    height: 481px;
+  }
+
+  .card-img {
+    width: calc(100% / 3);
+    height: auto;
+  }
+
+  .body-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    margin-left: 31px;
+    height: 117px;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .joined {
+    display: grid;
+    justify-content: start;
+  }
+} */

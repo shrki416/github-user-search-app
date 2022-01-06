@@ -29,17 +29,18 @@ function App() {
         </div>
 
         <div className="card">
-          <div className="card-img">
+          <section className="card-img">
             <img src={octocat} alt="octocat" />
-          </div>
+          </section>
 
-          <div className="card-body">
-            <section className="body-header">
+          <section className="card-body">
+            <div className="body-header">
               <h1 className="card-header">The Octocat</h1>
+              <p className="user-name">@octocat</p>
               <p className="joined">Joined 25 Jan 2011</p>
-            </section>
-            <p className="user-name">@octocat</p>
+            </div>
             <p className="user-bio">This profile has no bio</p>
+          </section>
 
             <section className="user-stats">
               <div>
@@ -74,7 +75,6 @@ function App() {
                 <p>@github</p>
               </div>
             </section>
-          </div>
         </div>
       </main>
     </div>
