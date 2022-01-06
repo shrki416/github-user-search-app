@@ -42,7 +42,7 @@ function App() {
           </section>
 
           <section className="user-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestias aliquam sed id aliquid labore debitis illum eveniet error libero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, et.</p>
           </section>
 
           <section className="user-stats">
