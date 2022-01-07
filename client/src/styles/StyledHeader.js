@@ -1,20 +1,24 @@
 import styled from "styled-components/macro";
 
 const StyledHeader = styled.header`
-    width: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
 
   h1 {
     font-weight: 700;
     font-size: 26px;
     line-height: 38.51px;
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.h1};
   }
 
   svg {
     margin-left: 16px;
     color: ${({ theme }) => theme.icon};
+  }
+
+  svg:hover {
+    cursor: pointer;
   }
 
   .dark-mode {
