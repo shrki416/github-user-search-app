@@ -6,28 +6,23 @@ const GlobalStyle = createGlobalStyle`
     ${fonts}
     ${variables}
 
-    html {
-        box-sizing: border-box;
-    }
-
-    *, *:before, *:after {
-        box-sizing: inherit;
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-        font-family: var(--font);
-        background-color: var(--zircon);
-    }
-
-    .app {
-       display: flex;
-       align-items: center;
-       height: 900px;
-       padding: 144px 0;
-       width: 1440px;
-       flex-direction: column;
-       margin: 0 auto;
-    }
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff);
+    background-color: #f6f8ff;
+  }
 `;
 
 export default GlobalStyle;
