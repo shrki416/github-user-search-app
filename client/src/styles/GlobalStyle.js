@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
     font-family: var(--ff);
-    background-color: #f6f8ff;
+    background: ${({ theme }) => theme.body};
   }
 `;
 
