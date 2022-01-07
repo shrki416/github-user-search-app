@@ -5,6 +5,8 @@ const variables = css`
     --ff: "Space Mono", --apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif;
 
+    --white: #ffffff;
+
     --fs-xs: 11px;
     --fs-sm: 13px;
     --fs-md: 15px;
