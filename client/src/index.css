@@ -1,19 +1,19 @@
 @import-normalize;
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
-:root {
+/* :root {
   --ff: "Space Mono", monospace;
-}
+} */
 
-body {
+/* body {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -21,24 +21,24 @@ body {
   align-items: center;
   font-family: var(--ff);
   background-color: #f6f8ff;
-}
+} */
 
 /* Container */
-.app {
+/* .app {
   width: 730px;
   height: 586px;
-}
+} */
 
 /* Inner Container */
 
-.main {
+/* .main {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Header & theme toggle button */
 
@@ -262,10 +262,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .app {
+  /* .app {
     width: 573px;
     height: 648px;
-  }
+  } */
 
   .card {
     width: 573px;
@@ -309,10 +309,10 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  .app {
+  /* .app {
     width: 327px;
     height: 667px;
-  }
+  } */
 
   .search-input > img {
     margin-left: 8px;
