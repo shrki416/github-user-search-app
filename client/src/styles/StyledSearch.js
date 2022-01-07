@@ -22,7 +22,7 @@ const StyledSearch = styled.div`
 
   .search-input > input {
     font-family: var(--ff);
-    font-size: 18px;
+    font-size: var(--fs-xl);
     line-height: 25px;
     color: #4b6a9b;
     border: none;
@@ -40,7 +40,7 @@ const StyledSearch = styled.div`
     color: #ffffff;
     border-radius: 15px;
     font-family: var(--ff);
-    font-size: 16px;
+    font-size: var(--fs-lg);
     line-height: 24px;
     text-align: center;
     border: none;
@@ -56,7 +56,7 @@ const StyledSearch = styled.div`
     }
 
     .search-input > input {
-      font-size: 12px;
+      font-size: var(--fs-xs);
       margin-left: 8px;
       width: 184px;
     }
@@ -65,7 +65,7 @@ const StyledSearch = styled.div`
       padding: 12.5px 16px;
       margin: 10px;
       border-radius: 10px;
-      font-size: 14px;
+      font-size: var(--fs-sm);
       line-height: 21px;
     }
   }

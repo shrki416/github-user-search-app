@@ -23,7 +23,7 @@ const StyledHeader = styled.header`
   }
 
   .dark-mode p {
-    font-size: 13px;
+    font-size: var(--fs-sm);
     line-height: 19.25px;
     letter-spacing: 2.5px;
   }
