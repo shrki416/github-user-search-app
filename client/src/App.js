@@ -1,10 +1,10 @@
 import { Container, GlobalStyle, Main } from "./styles";
 
+import Header from "./components/Header";
+import Search from "./components/Search";
 import company from "./assets/icon-company.svg";
 import location from "./assets/icon-location.svg";
-import moon from "./assets/icon-moon.svg";
 import octocat from "./assets/octocat.png";
-import search from "./assets/icon-search.svg";
 import twitter from "./assets/icon-twitter.svg";
 import website from "./assets/icon-website.svg";
 
@@ -14,23 +14,8 @@ function App() {
       <GlobalStyle />
       <Container>
         <Main>
-          <header className="header">
-            <h1>devfinder</h1>
-            <div className="dark-mode">
-              <p>DARK</p>
-              <img src={moon} alt="dark theme button" />
-            </div>
-          </header>
-
-          <div className="search">
-            <div className="search-input">
-              <img src={search} alt="magnifying glass" />
-              <input type="text" placeholder="Search Github username..." />
-            </div>
-            <div>
-              <button className="search-btn">Search</button>
-            </div>
-          </div>
+          <Header />
+          <Search />
 
           <div className="card">
             <section className="card-img">
