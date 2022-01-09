@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 
-const StyledSearch = styled.div`
+const StyledSearch = styled.form`
   width: 100%;
   height: 69px;
   display: flex;
@@ -16,7 +16,7 @@ const StyledSearch = styled.div`
     justify-content: center;
   }
 
-  .search-input > img {
+  .search-input > svg {
     margin-left: 32px;
   }
 
@@ -52,7 +52,7 @@ const StyledSearch = styled.div`
   }
 
   @media (max-width: 576px) {
-    .search-input > img {
+    .search-input > svg {
       margin-left: 8px;
     }
 
