@@ -1,19 +1,25 @@
-import React from 'react'
+import { ReactComponent as SearchIcon } from "../assets/icon-search.svg";
 import { StyledSearch } from "../styles";
-import search from "../assets/icon-search.svg";
 
-function Search() {
+function Search({ search, setSearch, submit }) {
   return (
-    <StyledSearch>
+    <StyledSearch onSubmit={submit}>
       <div className="search-input">
-        <img src={search} alt="magnifying glass" />
-        <input type="text" placeholder="Search Github username..." />
+        <SearchIcon />
+        <input
+          type="text"
+          placeholder="Search Github username..."
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
+        />
       </div>
       <div>
-        <button className="search-btn">Search</button>
+        <button className="search-btn">
+          Search
+        </button>
       </div>
     </StyledSearch>
   );
 }
 
-export default Search
+export default Search;
