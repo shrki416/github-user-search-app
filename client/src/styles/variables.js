@@ -7,6 +7,8 @@ const variables = css`
 
     --white: #ffffff;
     --blue: #0079FF;
+    --dark-bg: #141D2F;
+    --blue-grey: #697C9A;
 
     --fs-xs: 11px;
     --fs-sm: 13px;
