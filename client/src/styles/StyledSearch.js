@@ -6,7 +6,7 @@ const StyledSearch = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fefefe;
+  background-color: ${({ theme }) => theme.bg};
   border-radius: 15px;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
   margin-top: 36px;
@@ -24,7 +24,8 @@ const StyledSearch = styled.div`
     font-family: var(--ff);
     font-size: var(--fs-xl);
     line-height: 25px;
-    color: #4b6a9b;
+    color: ${({ theme }) => theme.searchText};
+    background-color: ${({ theme }) => theme.bg};
     border: none;
     outline: none;
     margin-left: 24px;
@@ -36,8 +37,8 @@ const StyledSearch = styled.div`
     justify-content: center;
     padding: 12.5px 24px 13.5px;
     margin: 10px;
-    background-color: #0079ff;
-    color: #ffffff;
+    background-color: var(--blue);
+    color: var(--white);
     border-radius: 15px;
     font-family: var(--ff);
     font-size: var(--fs-lg);
