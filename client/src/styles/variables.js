@@ -6,6 +6,7 @@ const variables = css`
       Helvetica, Arial, sans-serif;
 
     --white: #ffffff;
+    --blue: #0079FF;
 
     --fs-xs: 11px;
     --fs-sm: 13px;
