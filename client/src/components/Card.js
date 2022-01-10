@@ -1,6 +1,6 @@
 import { CardStyles } from "../styles";
 import company from "../assets/icon-company.svg";
-import formatDate from '../lib/formatDate';
+import formatDate from "../lib/formatDate";
 import location from "../assets/icon-location.svg";
 import octocat from "../assets/octocat.png";
 import twitter from "../assets/icon-twitter.svg";
@@ -15,49 +15,65 @@ function Card({ user }) {
 
       <section className="card-body">
         <div className="user-info">
-          <h2 className="card-header">{user.name ? user.name : `The Octocat`}</h2>
-          <p className="user-name">@{user.login ? user.login : 'octocat'}</p>
+          <h2 className="card-header">
+            {user.name ? user.name : `The Octocat`}
+          </h2>
+          <h3 className="user-name">@{user.login ? user.login : `octocat`}</h3>
           <p className="joined">Joined {formatDate(user.created_at)}</p>
         </div>
       </section>
 
-      <section className="user-bio">
+      <section className={`${!user.bio && `not-available`} user-bio`}>
         <p>{user.bio ? user.bio : `This profile has no bio`}</p>
       </section>
 
       <section className="user-stats">
         <div>
           <p className="user-stats-header">Repos</p>
-          <p className="user-stats-body">{user.public_repos ? user.public_repos : 8}</p>
+          <p className="user-stats-body">
+            {user.public_repos ? user.public_repos : 8}
+          </p>
         </div>
         <div>
           <p className="user-stats-header">Followers</p>
-          <p className="user-stats-body">{user.followers ? user.followers : 3938}</p>
+          <p className="user-stats-body">
+            {user.followers ? user.followers : 3938}
+          </p>
         </div>
         <div>
           <p className="user-stats-header">Following</p>
-          <p className="user-stats-body">{user.following ? user.following : 9}</p>
+          <p className="user-stats-body">
+            {user.following ? user.following : 9}
+          </p>
         </div>
       </section>
 
       <section className="social">
         <div>
           <img src={location} alt="location" />
-          <p id='location'>{user.location ? user.location : `Not Available`}</p>
+          <p id="location" className={`${!user.location && `not-available`}`}>
+            {user.location ? user.location : `Not Available`}
+          </p>
         </div>
         <div>
           <img src={twitter} alt="twitter" />
-          <p>
+          <p className={`${!user.twitter_username && `not-available`}`}>
             {user.twitter_username ? user.twitter_username : `Not Available`}
           </p>
         </div>
         <div>
           <img src={website} alt="website" />
-          <p>{user.blog ? user.blog : `Not Available`}</p>
+          <p className={`${!user.blog && `not-available`}`}>
+            <a href={user.blog} target="_blank" rel="noreferrer">
+              {user.blog ? user.blog : `Not Available`}
+            </a>
+          </p>
         </div>
         <div>
           <img src={company} alt="company" />
-          <p>{user.company ? user.company : `Not Available`}</p>
+          <p className={`${!user.company && `not-available`}`}>
+            {user.company ? user.company : `Not Available`}
+          </p>
         </div>
       </section>
     </CardStyles>
