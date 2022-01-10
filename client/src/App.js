@@ -17,8 +17,8 @@ function App() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     if (!search) return;
-    const response = await API.get(`/${search}`);
-    setUser(response.data);
+    const { data } = await API.get(`/${search}`);
+    setUser(data);
     setSearch("");
   };
 
