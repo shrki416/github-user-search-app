@@ -62,7 +62,7 @@ const CardStyles = styled.div`
     align-items: center;
   }
 
-  .user-bio p {
+  .user-bio p a {
     font-size: 15px;
     line-height: 25px;
     color: ${({ theme }) => theme.text};
@@ -129,14 +129,16 @@ const CardStyles = styled.div`
   }
 
   .social > div > img {
-    /* color: #4b6a9b; */
     margin-right: 16px;
   }
 
   .social > div > p {
     font-size: 15px;
     line-height: 22px;
-    /* color: #4b6a9b; */
+  }
+
+  .not-available {
+    opacity: 0.5;
   }
 
   @media screen and (max-width: 768px) {
@@ -259,7 +261,6 @@ const CardStyles = styled.div`
     .social > div > p {
       font-size: 13px;
       line-height: 19px;
-      /* color: #4b6a9b; */
     }
   }
 `;
