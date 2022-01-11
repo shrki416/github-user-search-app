@@ -51,6 +51,23 @@ const StyledSearch = styled.form`
     cursor: pointer;
   }
 
+  .error {
+    display: flex;
+    align-items: center;
+    font-family: var(--ff);
+    font-size: var(--fs-md);
+    font-weight: 700;
+    color: #f74646;
+    margin-left: 8rem;
+    line-height: 22px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .error {
+      margin-left: 0;
+    }
+  }
+
   @media (max-width: 576px) {
     .search-input > svg {
       margin-left: 8px;
@@ -68,6 +85,10 @@ const StyledSearch = styled.form`
       border-radius: 10px;
       font-size: var(--fs-sm);
       line-height: 21px;
+    }
+
+    .error {
+      display: none;
     }
   }
 `;

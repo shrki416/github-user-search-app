@@ -62,7 +62,7 @@ const CardStyles = styled.div`
     align-items: center;
   }
 
-  .user-bio p a {
+  .user-bio p {
     font-size: 15px;
     line-height: 25px;
     color: ${({ theme }) => theme.text};
@@ -135,6 +135,17 @@ const CardStyles = styled.div`
   .social > div > p {
     font-size: 15px;
     line-height: 22px;
+  }
+
+  .social > a {
+    font-family: var(--ff);
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--blue-grey);
+  }
+
+  .social > a:hover, a:visited {
+    color: var(--blue-grey);
   }
 
   .not-available {
@@ -256,6 +267,8 @@ const CardStyles = styled.div`
     .social {
       grid-template-columns: 1fr;
       margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .social > div > p {

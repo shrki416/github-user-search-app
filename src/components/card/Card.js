@@ -1,10 +1,10 @@
-import { CardStyles } from "../styles";
-import company from "../assets/icon-company.svg";
-import formatDate from "../lib/formatDate";
-import location from "../assets/icon-location.svg";
-import octocat from "../assets/octocat.png";
-import twitter from "../assets/icon-twitter.svg";
-import website from "../assets/icon-website.svg";
+import { CardStyles } from "../../styles";
+import company from "../../assets/icon-company.svg";
+import formatDate from "../../lib/formatDate";
+import location from "../../assets/icon-location.svg";
+import octocat from "../../assets/octocat.png";
+import twitter from "../../assets/icon-twitter.svg";
+import website from "../../assets/icon-website.svg";
 
 function Card({ user }) {
   return (
@@ -64,7 +64,7 @@ function Card({ user }) {
         <div>
           <img src={website} alt="website" />
           <p className={`${!user.blog && `not-available`}`}>
-            <a href={user.blog} target="_blank" rel="noreferrer">
+            <a href={`https://${user.blog}`} target="_blank" rel="noreferrer">
               {user.blog ? user.blog : `Not Available`}
             </a>
           </p>
