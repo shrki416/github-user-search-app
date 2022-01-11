@@ -141,11 +141,13 @@ const CardStyles = styled.div`
     font-family: var(--ff);
     font-size: 15px;
     line-height: 22px;
-    color: var(--blue-grey);
   }
 
-  .social > a:hover, a:visited {
-    color: var(--blue-grey);
+  .social > a:hover,
+  a:visited,
+  a:link,
+  a:active {
+    color: ${({ theme }) => theme.text};
   }
 
   .not-available {
