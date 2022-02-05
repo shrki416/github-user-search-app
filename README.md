@@ -1,3 +1,3 @@
 Coming soon, WIP!
 
-[Hosted on Heroku](morning-reaches-05235.herokuapp.com/)
+[Hosted on Heroku](https://morning-reaches-05235.herokuapp.com/)
